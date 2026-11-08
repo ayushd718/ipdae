@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ipdae"
+version = "0.1.0"
+description = "Standalone numpy implementation of i_pDAE (interface pDAE), the distance-masked interface confidence score from BindCraft2."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.21"]
+license = { file = "LICENSE" }
+keywords = ["protein", "binder", "interface", "pae", "ipdae", "confidence", "alphafold", "boltz", "esmfold"]
+
+[project.urls]
+Homepage = "https://github.com/PacesaLab/BindCraft2"
+"Source of metric" = "https://github.com/PacesaLab/BindCraft2"
+
+[project.scripts]
+ipdae = "ipdae:main"
+
+[tool.setuptools]
+py-modules = ["ipdae"]

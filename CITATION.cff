@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: >-
+  i_pDAE is the metric of BindCraft2; please cite BindCraft2 when you use this
+  implementation. This repository is a standalone numpy reimplementation of that
+  metric and is not the original work.
+title: "ipdae: standalone implementation of i_pDAE"
+abstract: >-
+  A dependency-light (numpy-only) reimplementation of i_pDAE, the distance-masked
+  interface confidence score introduced in BindCraft2, runnable from coordinate
+  (PDB/mmCIF) and PAE (JSON/NPZ) files.
+type: software
+references:
+  - type: software
+    title: "BindCraft2 (source of the i_pDAE metric)"
+    repository-code: "https://github.com/PacesaLab/BindCraft2"
+    authors:
+      - family-names: Pacesa
+        given-names: Martin
+      - name: "The BindCraft2 contributors"
